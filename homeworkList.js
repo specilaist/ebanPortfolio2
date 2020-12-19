@@ -30,6 +30,30 @@ $(document).ready(function() {
                   src: "./Assets/quiz.webp",
                   alt: "Emojis questioning and with glasses",
             },
+            {
+                  name: "Employee Summary",
+                  href: "https://github.com/specilaist/Employee-Summary/tree/master/Develop",
+                  src: "./Assets/employees.png",
+                  alt: "Employee Grid",
+            },
+            {
+                  name: "Smedium",
+                  href: "https://guarded-scrubland-12802.herokuapp.com/",
+                  src: "./Assets/blog.jpeg",
+                  alt: "Social Media App",
+            },
+            {
+                  name: "Generate ReadMe",
+                  href: "https://github.com/specilaist/generateReadMe",
+                  src: "./Assets/ReadMe.png",
+                  alt: "ReadMe File",
+            },
+            {
+                  name: "Note Taker",
+                  href: "https://ebansnotes.herokuapp.com/",
+                  src: "./Assets/note.jpeg",
+                  alt: "Note Book",
+            }
       ];
 
       console.log(projects);
@@ -66,6 +90,14 @@ $(document).ready(function() {
 
 
       };
+
+      $(document).on('click', '.submit', function(){
+            console.log('you hit the on function')
+            const $submitted = $('<h3>');
+            $submitted.addClass('sumbitted');
+            $submitted.text('Thank You For Submitting');
+            $('#contactHeader').append($submitted)
+      });
 
       generate();
 });
