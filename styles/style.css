@@ -1,9 +1,6 @@
-.container {
-      
+.container {  
       margin-top: 20px;
 }
-
-
 
 #generateContainer {
       display: flex;
